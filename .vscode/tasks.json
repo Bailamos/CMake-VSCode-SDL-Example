@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Make and Build project",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "cmake -G 'MinGW Makefiles' .; mingw32-make.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "DEBUG: Make and Build project",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "cmake -DCMAKE_BUILD_TYPE=Debug -G 'MinGW Makefiles' .; mingw32-make.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
