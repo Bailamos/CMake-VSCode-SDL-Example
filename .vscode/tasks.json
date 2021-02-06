@@ -23,6 +23,18 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "shell",
+            "label": "Make, Build project and Run tests",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "cmake -DCMAKE_BUILD_TYPE=Debug -G 'MinGW Makefiles' .; mingw32-make.exe; ./tests/example.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ],
     "version": "2.0.0"

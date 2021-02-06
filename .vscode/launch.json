@@ -8,7 +8,7 @@
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/Tutorial.exe",
+            "program": "${workspaceRoot}/src/main.exe",
             "cwd": "${workspaceRoot}",
             "preLaunchTask": "DEBUG: Make and Build project"
         },
