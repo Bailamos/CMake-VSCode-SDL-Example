@@ -56,3 +56,10 @@ test/test_runner
 
 CMakeLists.txt
 .vscode/c_cpp_properties.json
+
+
+## Google tests sources
+
+tests/googletest-build/**
+tests/googletest-download/**
+tests/googletest-src

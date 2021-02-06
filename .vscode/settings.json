@@ -40,5 +40,11 @@
         "streambuf": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp"
+    },
+    "files.exclude": {
+        "**/CMakeFiles/": true,
+        "**/CMakeCache.txt": true,
+        "**/*.cmake": true,
+        "**/Makefile": true
     }
 }

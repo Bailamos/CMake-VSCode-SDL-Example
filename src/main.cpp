@@ -1,9 +1,14 @@
+#include <stdio.h>
 #include "SDL.h" 
+#include "example.hpp"
 
 int main(int argc, char *argv[])
 {
     SDL_Window* window = NULL;
     SDL_Renderer* renderer = NULL;
+
+    int test = add(1, 1);
+    printf("Result: %i", test);
 
     SDL_CreateWindowAndRenderer(800, 600, 0, &window, &renderer);
 
