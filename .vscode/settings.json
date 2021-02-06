@@ -46,6 +46,9 @@
         "**/CMakeCache.txt": true,
         "**/*.cmake": true,
         "**/Makefile": true,
+        "**/googletest-build": true,
+        "**/googletest-download": true,
+        "**/googletest-src": true
     },
     "editor.formatOnSave": true
 }
