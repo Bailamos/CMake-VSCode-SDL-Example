@@ -55,3 +55,4 @@ bin/*
 test/test_runner
 
 CMakeLists.txt
+.vscode/c_cpp_properties.json
