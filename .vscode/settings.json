@@ -46,5 +46,6 @@
         "**/CMakeCache.txt": true,
         "**/*.cmake": true,
         "**/Makefile": true
-    }
+    },
+    "editor.formatOnSave": true
 }
