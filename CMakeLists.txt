@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.19.4)
 
 project (GOOGLETESTEXAMPLE)
 
+set(SDL2_DIR='D:/Projects/Libaries/SDL2-2.0.14/x86_64-w64-mingw32/lib/cmake/SDL2')
+
 # include headers from src folder recursively
 set(myDesiredRootForHeaderFileSearch src/headers)
 file(GLOB my_include_directories ${myDesiredRootForHeaderFileSearch})
