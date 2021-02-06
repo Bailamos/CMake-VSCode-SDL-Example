@@ -56,7 +56,7 @@ test/test_runner
 
 .vscode/c_cpp_properties.json
 
-./CMakeLists.txt
+/CMakeLists.txt
 
 ## Google tests sources
 
