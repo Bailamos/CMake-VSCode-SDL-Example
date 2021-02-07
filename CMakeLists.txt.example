@@ -4,7 +4,7 @@ project (GOOGLETESTEXAMPLE)
 
 set(SDL2_DIR [PATH_TO_SDL]/x86_64-w64-mingw32/lib/cmake/SDL2)
 
-# include headers from src folder recursively
+# include headers from src folder
 set(myDesiredRootForHeaderFileSearch src/headers)
 file(GLOB my_include_directories ${myDesiredRootForHeaderFileSearch})
 include_directories(${my_include_directories})
