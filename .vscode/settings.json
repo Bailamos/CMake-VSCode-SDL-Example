@@ -48,7 +48,9 @@
         "**/Makefile": true,
         "**/googletest-build": true,
         "**/googletest-download": true,
-        "**/googletest-src": true
+        "**/googletest-src": true,
+        "lib": true,
+        "bin": true
     },
     "editor.formatOnSave": true
 }
