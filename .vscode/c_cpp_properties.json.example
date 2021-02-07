@@ -4,7 +4,9 @@
             "name": "Windows",
             "includePath": [
                 "${workspaceFolder}/src/**",
-                "[PATH_TO_SDL]/include/SDL2"
+                "[PATH_TO_SDL]/include/SDL2",
+                "${workspaceFolder}/tests/**",
+                "${workspaceFolder}/tests/googletest-src/googletest/include/**"
             ],
             "defines": [],
             "cStandard": "c11",
