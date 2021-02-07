@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.19.4)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_COMPILER "g++")
-SET(OUTPUT main)
+set(OUTPUT main)
 
 # Find and Include SDL2 Libaries
 find_package(SDL2 REQUIRED)
