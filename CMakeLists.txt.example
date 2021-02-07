@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.19.4)
 
 project (GOOGLETESTEXAMPLE)
 
-set(SDL2_DIR='[PATH_TO_SDL]/x86_64-w64-mingw32/lib/cmake/SDL2')
+set(SDL2_DIR [PATH_TO_SDL]/x86_64-w64-mingw32/lib/cmake/SDL2)
 
 # include headers from src folder recursively
 set(myDesiredRootForHeaderFileSearch src/headers)
