@@ -53,3 +53,13 @@ include/*
 lib/*
 bin/*
 test/test_runner
+
+.vscode/c_cpp_properties.json
+
+/CMakeLists.txt
+
+## Google tests sources
+
+tests/googletest-build/**
+tests/googletest-download/**
+tests/googletest-src
