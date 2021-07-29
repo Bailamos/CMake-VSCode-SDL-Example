@@ -51,7 +51,7 @@
         "**/googletest-src": true,
         "lib": true,
         "bin": true,
-        "**/*.a"
+        "**/*.a": true,
     },
     "editor.formatOnSave": true
 }

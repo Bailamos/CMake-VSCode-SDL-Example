@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "SDL.h"
+#include "SDL_image.h"
 #include "lib/example.hpp"
 
 int main(int argc, char *argv[])
@@ -17,6 +18,10 @@ int main(int argc, char *argv[])
 
   SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
   SDL_RenderDrawLine(renderer, 0, 0, 50, 50);
+
+  SDL_Rect displayTarget = {200, 200, 400, 400};
+  SDL_Texture *texture = IMG_LoadTexture(renderer, "assets/asset.png");
+  SDL_RenderCopy(renderer, texture, NULL, &displayTarget);
 
   SDL_RenderPresent(renderer);
   SDL_Delay(3000);
