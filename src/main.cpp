@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "SDL.h"
-#include "example.hpp"
+#include "lib/example.hpp"
 
 int main(int argc, char *argv[])
 {
