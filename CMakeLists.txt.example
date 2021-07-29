@@ -1,13 +1,17 @@
 cmake_minimum_required(VERSION 3.19.4)
 
-project (GOOGLETESTEXAMPLE)
+if(NOT DEFINED BUILD_TESTS)
+    set(BUILD_TESTS False)
+endif()
 
-set(SDL2_DIR [PATH_TO_SDL]/x86_64-w64-mingw32/lib/cmake/SDL2)
+project (SDL_STARTUP_PROJECT)
 
-# include headers from src folder
-set(myDesiredRootForHeaderFileSearch src/headers)
-file(GLOB my_include_directories ${myDesiredRootForHeaderFileSearch})
-include_directories(${my_include_directories})
+set(SDL2_DIR [PATH_TO_SDL]]/SDL2-2.0.14/x86_64-w64-mingw32/lib/cmake/SDL2)
+set(SDL2_image_DIR [PATH_TO_SDL_image]/SDL2_image-2.0.5/lib/x64/cmake)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/output)
 
 add_subdirectory (src) 
-add_subdirectory (tests)
+
+if(BUILD_TESTS)
+    add_subdirectory(tests)
+endif()
