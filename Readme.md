@@ -1,5 +1,5 @@
 # Description
-This is simple project using CMake for multidirectory C++ project with SDL and GoogleTest.
+This is simple project using CMake for multidirectory C++ project with SDL, SDl_image, GoogleTest and Github Workflows for automated tests run.
 
 # Prerequisites
 ## On Windows:
