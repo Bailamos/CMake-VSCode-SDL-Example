@@ -15,5 +15,5 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_BINARY_DIR}/src)
 target_link_libraries(${PROJECT_NAME} PUBLIC ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES})
 
 # Create lib for tests
-add_library(${PROJECT_NAME}_lib STATIC lib/example.cpp)
+add_library(${PROJECT_NAME}_lib STATIC main.cpp lib/example.cpp)
 target_include_directories (${PROJECT_NAME}_lib PUBLIC ${PROJECT_SOURCE_DIR}/src)

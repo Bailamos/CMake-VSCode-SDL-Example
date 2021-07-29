@@ -36,4 +36,4 @@ include_directories(${SDL2_INCLUDE_DIRS})
 include_directories(${SDL2_IMAGE_INCLUDE_DIRS})
 
 add_executable(test test.cpp)
-target_link_libraries(test PUBLIC game_lib gtest_main)
+target_link_libraries(test PUBLIC game_lib gtest_main ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES})
