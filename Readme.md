@@ -32,7 +32,7 @@ This is simple project using CMake for multidirectory C++ project with SDL, SDL_
 1. Copy `SDL2.dll`, `SDL2_image.dll`, `libpng16-16.dll`, `zlib.1.dll` to `output` directory
 
 ### From terminal:
-1. From root directory run command `cmake -G "MinGW Makefiles" .`
+1. From root directory run command `cmake -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTS=True -G "MinGW Makefiles" .`
 1. Run command `mingw32-make.exe`
 1. Run executable `./output/game.exe`
 1. For tests run executable `./output/test.exe`
