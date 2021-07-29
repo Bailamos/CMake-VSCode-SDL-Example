@@ -27,7 +27,7 @@ This is simple project using CMake for multidirectory C++ project with SDL, SDL_
 #### Prepare SDL
 1. Set `prefix`, `SDL2_PREFIX`, `SDL2_EXEC_PREFIX` in `sdl2-config.cmake` in `[PATH_TO_SDL]/lib/cmake/SDL2` directory to `[PATH_TO_SDL]`.
 1. Replace `[PATH_TO_SDL_image]` in `utils/sdl2_image-config.cmake.example`
-1. [OPTIONAL] Copy `utils/sdl2_image-config.cmake.example` to `[PATH_TO_SDL_image]/SDL2_image-2.0.5/lib/x64/cmake/sdl2_image-config.cmake` (create folder if not exists)
+1. Copy `utils/sdl2_image-config.cmake.example` to `[PATH_TO_SDL_image]/SDL2_image-2.0.5/lib/x64/cmake/sdl2_image-config.cmake` (create folder if not exists)
 1. Copy `SDL2.dll`, `SDL2_image.dll`, `libpng16-16.dll`, `zlib.1.dll` to `output` directory.
 
 ### From terminal:
