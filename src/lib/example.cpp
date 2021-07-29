@@ -1,4 +1,4 @@
-#include "lib/example.hpp"
+#include "example.hpp"
 
 int add(int a, int b)
 {
