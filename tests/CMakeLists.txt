@@ -30,5 +30,10 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
   include_directories("${gtest_SOURCE_DIR}/include")
 endif()
 
-add_executable(example test.cpp)
-target_link_libraries(example PUBLIC main_lib gtest_main)
+find_package(SDL2 REQUIRED)
+find_package(SDL2_image REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+include_directories(${SDL2_IMAGE_INCLUDE_DIRS})
+
+add_executable(test test.cpp)
+target_link_libraries(test PUBLIC game_lib gtest_main ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES})

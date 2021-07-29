@@ -50,7 +50,8 @@
         "**/googletest-download": true,
         "**/googletest-src": true,
         "lib": true,
-        "bin": true
+        "bin": true,
+        "**/*.a": true,
     },
     "editor.formatOnSave": true
 }

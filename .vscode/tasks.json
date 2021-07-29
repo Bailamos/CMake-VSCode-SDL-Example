@@ -6,7 +6,7 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "command": "cmake -G 'MinGW Makefiles' .; mingw32-make.exe",
+            "command": "cmake -G 'MinGW Makefiles' -DBUILD_TESTS=False .; mingw32-make.exe",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -18,7 +18,7 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "command": "cmake -DCMAKE_BUILD_TYPE=Debug -G 'MinGW Makefiles' .; mingw32-make.exe",
+            "command": "cmake -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTS=False -G 'MinGW Makefiles' .; mingw32-make.exe",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -30,7 +30,7 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "command": "cmake -DCMAKE_BUILD_TYPE=Debug -G 'MinGW Makefiles' .; mingw32-make.exe; ./tests/example.exe",
+            "command": "cmake -DCMAKE_BUILD_TYPE=Debug -G 'MinGW Makefiles' .; mingw32-make.exe; ./output/test.exe --gtest_output=xml:testResults.xml",
             "group": {
                 "kind": "build",
                 "isDefault": true

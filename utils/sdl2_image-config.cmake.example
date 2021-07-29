@@ -1,0 +1,7 @@
+set(prefix "[PATH_TO_SDL_image]") 
+set(exec_prefix "${prefix}")
+set(libdir "${prefix}/lib/x64")
+set(SDL2_IMAGE_PREFIX "[PATH_TO_SDL_image]")
+set(SDL2_IMAGE_EXEC_PREFIX "[PATH_TO_SDL_image]")
+set(SDL2_IMAGE_INCLUDE_DIRS "${prefix}/include")
+set(SDL2_IMAGE_LIBRARIES "-L${libdir} -lSDL2_image")

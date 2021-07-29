@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.19.4)
+
+if(NOT DEFINED BUILD_TESTS)
+    set(BUILD_TESTS False)
+endif()
+
+project (SDL_STARTUP_PROJECT)
+
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/.github/workflows/utils)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/output)
+
+add_subdirectory(src)
+
+if(BUILD_TESTS)
+    add_subdirectory(tests)
+endif()
