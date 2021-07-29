@@ -4,7 +4,8 @@
             "name": "Windows",
             "includePath": [
                 "${workspaceFolder}/src/**",
-                "[PATH_TO_SDL]/include/SDL2",
+                "[PATH_TO_SDL_image]/SDL2_image-2.0.5/include",
+                "[PATH_TO_SDL]/SDL2-2.0.14/x86_64-w64-mingw32/include/SDL2",
                 "${workspaceFolder}/tests/**",
                 "${workspaceFolder}/tests/googletest-src/googletest/include/**"
             ],

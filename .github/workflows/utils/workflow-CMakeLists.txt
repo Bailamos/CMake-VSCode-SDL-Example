@@ -6,10 +6,9 @@ endif()
 
 project(SDL_UNTITLED_PROJECT)
 
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/utils)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/.github/workflows/utils)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/output)
 
-add_subdirectory(engine)
 add_subdirectory(src)
 
 if(BUILD_TESTS)

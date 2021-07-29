@@ -30,7 +30,7 @@ jobs:
 
     - name: copy_cmake
       run: |
-        cp ${{github.workspace}}/.github/workflows/workflow-CMakeLists.txt ${{github.workspace}}/CMakeLists.txt
+        cp ${{github.workspace}}/.github/workflows/utils/workflow-CMakeLists.txt ${{github.workspace}}/CMakeLists.txt
 
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DBUILD_TESTS=True
