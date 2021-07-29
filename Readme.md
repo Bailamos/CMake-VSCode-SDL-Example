@@ -4,9 +4,9 @@ This is simple project using CMake for multidirectory C++ project with SDL, SDL_
 # Prerequisites
 ## On Windows:
 
-1. Install Mingw-w64.
-1. Install cmake.
-1. Download SDL development library.
+1. Install Mingw-w64
+1. Install cmake
+1. Download SDL development library
 1. Download SDL image development library
 
 # How to run
