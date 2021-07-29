@@ -12,7 +12,7 @@ include_directories(${SDL2_IMAGE_INCLUDE_DIRS})
 # Look for source files
 add_executable(${PROJECT_NAME} main.cpp lib/example.cpp)
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_BINARY_DIR}/src)
-target_link_libraries(${PROJECT_NAME} PUBLIC ${ENGINE_LIB} ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PUBLIC ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES})
 
 # Create lib for tests
 add_library(${PROJECT_NAME}_lib STATIC main.cpp lib/example.cpp)
