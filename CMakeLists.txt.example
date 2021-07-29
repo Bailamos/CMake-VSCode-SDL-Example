@@ -6,7 +6,7 @@ endif()
 
 project (SDL_STARTUP_PROJECT)
 
-set(SDL2_DIR [PATH_TO_SDL]]/SDL2-2.0.14/x86_64-w64-mingw32/lib/cmake/SDL2)
+set(SDL2_DIR [PATH_TO_SDL]/SDL2-2.0.14/x86_64-w64-mingw32/lib/cmake/SDL2)
 set(SDL2_image_DIR [PATH_TO_SDL_image]/SDL2_image-2.0.5/lib/x64/cmake)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/output)
 
