@@ -15,7 +15,6 @@ This is simple project using CMake for multidirectory C++ project with SDL and G
 ### Pre-steps
 
 #### Update CmakeLists.txt
-
 1. Rename `CMakeLists.txt.example` to `CMakeLists.txt`
 1. Replace `[PATH_TO_SDL]` in `CMakeLists.txt` with path where you keep SDL source.
 1. Replace `[PATH_TO_SDL_image]` in `CMakeLists.txt` with path where you keep SDL source.
@@ -42,3 +41,7 @@ This is simple project using CMake for multidirectory C++ project with SDL and G
 To build project from VSCode go to `Terminal -> Run Build Task`
 
 To debug project in VSCode go to `Run -> Start Debugging` or `Run -> Start without Debugging`
+
+### Notes
+
+1. Having separate `CmakeLists.txt` for Github Workflows is probably not the best solution.
