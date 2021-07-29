@@ -44,4 +44,4 @@ To debug project in VSCode go to `Run -> Start Debugging` or `Run -> Start witho
 
 ### Notes
 
-* Having separate `CmakeLists.txt` for Github Workflows is probably not the best solution. Although configuring SDL on Windows Workflow Machine seems like tedious task thats why i went with running build on Ubuntu machine with dedicated CmakeLists.txt (stored in `.github/workflows/utils`). It probably would be possible to make parameterized cmakelists that would handle all cases.
+* Having separate `CmakeLists.txt` for Github Workflows is probably not the best solution. Although configuring SDL on Windows Workflow Machine seems like tedious task thats why i went with running build on Ubuntu machine with dedicated CmakeLists.txt (stored in `.github/workflows/utils`) and installing required libraries with apt-get. It probably would be possible to make parameterized cmakelists that would handle all cases.
