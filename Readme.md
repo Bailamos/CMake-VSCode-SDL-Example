@@ -16,20 +16,20 @@ This is simple project using CMake for multidirectory C++ project with SDL, SDL_
 
 #### Update CmakeLists.txt
 1. Rename `CMakeLists.txt.example` to `CMakeLists.txt`
-1. Replace `[PATH_TO_SDL]` in `CMakeLists.txt` with path where you keep SDL source.
-1. Replace `[PATH_TO_SDL_image]` in `CMakeLists.txt` with path where you keep SDL source.
+1. Replace `[PATH_TO_SDL]` in `CMakeLists.txt` with path where you keep SDL source
+1. Replace `[PATH_TO_SDL_image]` in `CMakeLists.txt` with path where you keep SDL source
 
 #### Update Visual Studio Code configuration
 1. Rename `.vscode/c_cpp_properties.json.example` to `.vscode/c_cpp_properties.json`
-1. Replace `[PATH_TO_SDL]` in `.vscode/c_cpp_properties.json` with path where you keep SDL source.
-1. Replace `[PATH_TO_SDL_image]` in `.vscode/c_cpp_properties.json` with path where you keep SDL source.
+1. Replace `[PATH_TO_SDL]` in `.vscode/c_cpp_properties.json` with path where you keep SDL source
+1. Replace `[PATH_TO_SDL_image]` in `.vscode/c_cpp_properties.json` with path where you keep SDL source
 
 #### Prepare SDL
-1. Set `prefix`, `SDL2_PREFIX`, `SDL2_EXEC_PREFIX` in `sdl2-config.cmake` in `[PATH_TO_SDL]/lib/cmake/SDL2` directory to `[PATH_TO_SDL]`.
+1. Set `prefix`, `SDL2_PREFIX`, `SDL2_EXEC_PREFIX` in `sdl2-config.cmake` in `[PATH_TO_SDL]/lib/cmake/SDL2` directory to `[PATH_TO_SDL]`
 1. Replace `[PATH_TO_SDL_image]` in `utils/sdl2_image-config.cmake.example`
 1. Copy `utils/sdl2_image-config.cmake.example` to `[PATH_TO_SDL_image]/SDL2_image-2.0.5/lib/x64/cmake/sdl2_image-config.cmake` (create folder if not exists)
-    1. Alternatively you can just rename `utils/sdl2_image-config.cmake.example` to `utils/sdl2_image-config.cmake` and set `SDL2_image_DIR` in `CMakeLists.txt`.
-1. Copy `SDL2.dll`, `SDL2_image.dll`, `libpng16-16.dll`, `zlib.1.dll` to `output` directory.
+    1. Alternatively you can just rename `utils/sdl2_image-config.cmake.example` to `utils/sdl2_image-config.cmake` and set `SDL2_image_DIR` in `CMakeLists.txt`
+1. Copy `SDL2.dll`, `SDL2_image.dll`, `libpng16-16.dll`, `zlib.1.dll` to `output` directory
 
 ### From terminal:
 1. From root directory run command `cmake -G "MinGW Makefiles" .`
